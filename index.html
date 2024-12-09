@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Book Finder</h1>
+        <input type="text" id="search-query" placeholder="Search for a book...">
+        <button id="search-button">Search</button>
+        <div id="results"></div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCUGhx1aW7WqI9sHuJFahzedOdl4Mksnmw",
+          authDomain: "bookbuddy-bd527.firebaseapp.com",
+          projectId: "bookbuddy-bd527",
+          storageBucket: "bookbuddy-bd527.firebasestorage.app",
+          messagingSenderId: "928664583825",
+          appId: "1:928664583825:web:7009837c9f8ecc00d2c930",
+          measurementId: "G-98K146LTVM"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
