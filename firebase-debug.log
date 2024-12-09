@@ -1,0 +1,271 @@
+[debug] [2024-12-09T01:37:53.954Z] ----------------------------------------------------------------------
+[debug] [2024-12-09T01:37:53.958Z] Command:       /usr/local/bin/firebase /Users/erichanson/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2024-12-09T01:37:53.958Z] CLI Version:   13.28.0
+[debug] [2024-12-09T01:37:53.959Z] Platform:      darwin
+[debug] [2024-12-09T01:37:53.959Z] Node Version:  v18.5.0
+[debug] [2024-12-09T01:37:53.971Z] Time:          Sun Dec 08 2024 20:37:53 GMT-0500 (Eastern Standard Time)
+[debug] [2024-12-09T01:37:53.971Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-09T01:37:53.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T01:37:53.981Z] > authorizing via signed-in user (ehanson31415@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/erichanson/Desktop/VSCode Files/Bookbuddy App
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-09T01:38:59.017Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:38:59.018Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:38:59.020Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-12-09T01:38:59.540Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-09T01:38:59.540Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project bookbuddy-bd527 (Bookbuddy) 
+[info] 
+=== Dataconnect Setup
+[debug] [2024-12-09T01:39:03.311Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:03.311Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:03.311Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/bookbuddy-bd527/billingInfo [none]
+[debug] [2024-12-09T01:39:03.592Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/bookbuddy-bd527/billingInfo 200
+[debug] [2024-12-09T01:39:03.593Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/bookbuddy-bd527/billingInfo {"name":"projects/bookbuddy-bd527/billingInfo","projectId":"bookbuddy-bd527","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2024-12-09T01:39:03.598Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:03.598Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:03.599Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com [none]
+[debug] [2024-12-09T01:39:03.600Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:39:03.925Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com 200
+[debug] [2024-12-09T01:39:03.925Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com [omitted]
+[warn] ⚠  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2024-12-09T01:39:03.927Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:03.927Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:03.927Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com:enable [none]
+[debug] [2024-12-09T01:39:03.927Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:39:04.661Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com:enable 200
+[debug] [2024-12-09T01:39:04.662Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2024-12-09T01:39:14.664Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:14.664Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:14.664Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com [none]
+[debug] [2024-12-09T01:39:14.664Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:39:15.031Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com 200
+[debug] [2024-12-09T01:39:15.031Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/sqladmin.googleapis.com [omitted]
+[info] ✔  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] ✔  Wrote dataconnect/dataconnect.yaml 
+[info] ✔  Wrote dataconnect/schema/schema.gql 
+[info] ✔  Wrote dataconnect/connector/connector.yaml 
+[info] ✔  Wrote dataconnect/connector/queries.gql 
+[info] ✔  Wrote dataconnect/connector/mutations.gql 
+[info] i  If you'd like to add the generated SDK to your app your, run firebase init dataconnect:sdk 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/bookbuddy-bd527/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2024-12-09T01:39:15.111Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:15.112Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:15.113Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/firestore.googleapis.com [none]
+[debug] [2024-12-09T01:39:15.113Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/firestore.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:39:15.506Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/firestore.googleapis.com 200
+[debug] [2024-12-09T01:39:15.506Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/firestore.googleapis.com [omitted]
+[debug] [2024-12-09T01:39:15.507Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:15.507Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:15.507Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default) [none]
+[debug] [2024-12-09T01:39:15.864Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default) 200
+[debug] [2024-12-09T01:39:15.866Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default) {"name":"projects/bookbuddy-bd527/databases/(default)","uid":"75f4f260-0365-4252-b252-d6f0c907b372","createTime":"2024-12-09T01:13:47.639105Z","updateTime":"2024-12-09T01:13:47.639105Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-12-09T01:13:47.639105Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"ILHo2vXGmYoDMMHS7JzBmYoD"}
+[debug] [2024-12-09T01:39:15.866Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-12-09T01:39:15.867Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-12-09T01:39:15.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T01:39:15.871Z] > authorizing via signed-in user (ehanson31415@gmail.com)
+[debug] [2024-12-09T01:39:15.871Z] [iam] checking project bookbuddy-bd527 for permissions ["firebase.projects.get"]
+[debug] [2024-12-09T01:39:15.873Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:15.873Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:15.874Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions [none]
+[debug] [2024-12-09T01:39:15.876Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:39:15.878Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T01:39:16.126Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions 200
+[debug] [2024-12-09T01:39:16.126Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-12-09T01:39:59.971Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:59.971Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:39:59.973Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/bookbuddy-bd527/releases pageSize=10&pageToken=
+[debug] [2024-12-09T01:40:00.409Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/bookbuddy-bd527/releases 200
+[debug] [2024-12-09T01:40:00.409Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/bookbuddy-bd527/releases {"releases":[{"name":"projects/bookbuddy-bd527/releases/cloud.firestore","rulesetName":"projects/bookbuddy-bd527/rulesets/42aaa80d-ac27-4723-bdca-5e8fdf8f85af","createTime":"2024-12-09T01:13:52.380364Z","updateTime":"2024-12-09T01:15:11.923708Z"}]}
+[debug] [2024-12-09T01:40:00.409Z] Found ruleset: projects/bookbuddy-bd527/rulesets/42aaa80d-ac27-4723-bdca-5e8fdf8f85af
+[debug] [2024-12-09T01:40:00.410Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:00.410Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:00.410Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/bookbuddy-bd527/rulesets/42aaa80d-ac27-4723-bdca-5e8fdf8f85af [none]
+[debug] [2024-12-09T01:40:00.645Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/bookbuddy-bd527/rulesets/42aaa80d-ac27-4723-bdca-5e8fdf8f85af 200
+[debug] [2024-12-09T01:40:00.646Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/bookbuddy-bd527/rulesets/42aaa80d-ac27-4723-bdca-5e8fdf8f85af [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-12-09T01:40:02.838Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:02.838Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:02.840Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:02.840Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:02.841Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-12-09T01:40:02.844Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-12-09T01:40:03.124Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-12-09T01:40:03.124Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-12-09T01:40:03.477Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-12-09T01:40:03.477Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/bookbuddy-bd527/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/bookbuddy-bd527/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2024-12-09T01:40:13.873Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T01:40:13.874Z] > authorizing via signed-in user (ehanson31415@gmail.com)
+[debug] [2024-12-09T01:40:13.874Z] [iam] checking project bookbuddy-bd527 for permissions ["firebase.projects.get"]
+[debug] [2024-12-09T01:40:13.874Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:13.874Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:13.875Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions [none]
+[debug] [2024-12-09T01:40:13.875Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:40:13.875Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T01:40:14.018Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions 200
+[debug] [2024-12-09T01:40:14.018Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T01:40:14.018Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:14.019Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:14.019Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:14.019Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:14.020Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-09T01:40:14.020Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:40:14.026Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-09T01:40:14.026Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:40:14.345Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-09T01:40:14.345Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-09T01:40:14.354Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-09T01:40:14.354Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-12-09T01:40:14.354Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:14.355Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:14.355Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-12-09T01:40:14.355Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:40:14.983Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-12-09T01:40:14.984Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-12-09T01:40:24.985Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:24.986Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:40:24.986Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-09T01:40:24.986Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:40:25.338Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-09T01:40:25.338Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.js 
+[info] ✔  Wrote functions/tsconfig.json 
+[info] ✔  Wrote functions/tsconfig.dev.json 
+[info] ✔  Wrote functions/src/index.ts 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 0.9.7
+ 
+[error] ⬢  genkit: Genkit initialization failed: Error: spawn(npm, [install, -g, genkit-cli@0.9.7
+]) 
+ exited with code: 2 
+[info] 
+=== Functions Setup
+[debug] [2024-12-09T01:41:43.101Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-09T01:41:43.101Z] > authorizing via signed-in user (ehanson31415@gmail.com)
+[debug] [2024-12-09T01:41:43.102Z] [iam] checking project bookbuddy-bd527 for permissions ["firebase.projects.get"]
+[debug] [2024-12-09T01:41:43.103Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:41:43.103Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:41:43.104Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions [none]
+[debug] [2024-12-09T01:41:43.104Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:41:43.104Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T01:41:43.324Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions 200
+[debug] [2024-12-09T01:41:43.325Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookbuddy-bd527:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-09T01:41:43.325Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:41:43.325Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:41:43.326Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:41:43.326Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:41:43.326Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-09T01:41:43.326Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:41:43.330Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-09T01:41:43.331Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/bookbuddy-bd527
+[debug] [2024-12-09T01:41:43.712Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-09T01:41:43.712Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-12-09T01:41:43.714Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-09T01:41:43.714Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/bookbuddy-bd527/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] ✔  Wrote bookbuddy/package.json 
+[info] ✔  Wrote bookbuddy/.eslintrc.js 
+[info] ✔  Wrote bookbuddy/index.js 
+[info] ✔  Wrote bookbuddy/.gitignore 
+[info] 
+=== Apphosting Setup
+[debug] [2024-12-09T01:42:07.943Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:42:07.943Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:42:07.944Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/bookbuddy-bd527/billingInfo [none]
+[debug] [2024-12-09T01:42:08.401Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/bookbuddy-bd527/billingInfo 200
+[debug] [2024-12-09T01:42:08.401Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/bookbuddy-bd527/billingInfo {"name":"projects/bookbuddy-bd527/billingInfo","projectId":"bookbuddy-bd527","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] ✔  Wrote apphosting.yaml 
+[info] ✔  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-09T01:42:08.408Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:42:08.409Z] Checked if tokens are valid: true, expires at: 1733711837138
+[debug] [2024-12-09T01:42:08.409Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookbuddy-bd527 [none]
+[debug] [2024-12-09T01:42:08.757Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookbuddy-bd527 200
+[debug] [2024-12-09T01:42:08.762Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookbuddy-bd527 {"projectId":"bookbuddy-bd527","projectNumber":"928664583825","displayName":"Bookbuddy","name":"projects/bookbuddy-bd527","resources":{"hostingSite":"bookbuddy-bd527"},"state":"ACTIVE","etag":"1_b7c5e1aa-02ca-46ce-9380-16dae64a6400"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-12-09T01:42:29.825Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-12-09T01:42:29.925Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-12-09T01:42:29.925Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.2","browserURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.2/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.2/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/erichanson/Desktop/VSCode Files/Bookbuddy App is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=23961435&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-09T01:43:34.720Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-12-09T01:43:34.727Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-12-09T01:43:35.000Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-12-09T01:43:35.001Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-12-09T01:43:35.021Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-12-09T01:43:35.269Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-12-09T01:43:35.269Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ehanson314","id":79788107,"node_id":"MDQ6VXNlcjc5Nzg4MTA3","avatar_url":"https://avatars.githubusercontent.com/u/79788107?v=4","gravatar_id":"","url":"https://api.github.com/users/ehanson314","html_url":"https://github.com/ehanson314","followers_url":"https://api.github.com/users/ehanson314/followers","following_url":"https://api.github.com/users/ehanson314/following{/other_user}","gists_url":"https://api.github.com/users/ehanson314/gists{/gist_id}","starred_url":"https://api.github.com/users/ehanson314/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ehanson314/subscriptions","organizations_url":"https://api.github.com/users/ehanson314/orgs","repos_url":"https://api.github.com/users/ehanson314/repos","events_url":"https://api.github.com/users/ehanson314/events{/privacy}","received_events_url":"https://api.github.com/users/ehanson314/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2021-02-28T10:03:39Z","updated_at":"2021-02-28T10:03:40Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":3521,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as ehanson314 
+[info] 
